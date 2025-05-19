@@ -3,8 +3,8 @@ body {
     min-height: calc(100vh - 90px);
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    background: linear-gradient(to bottom, #00d2ff, #928dab);
-    color: #fff;
+    background: linear-gradient(to bottom, #f6f8fc, #dbe9f4);
+    color: #2c3e50;
 }
 
 h1 {
@@ -19,7 +19,8 @@ nav {
     min-height: 60px;
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
 }
 
 nav ul {
@@ -32,6 +33,7 @@ nav a {
     display: block;
     padding: 10px 20px;
     line-height: 60px;
+    color: #34495e;
 }
 
 li {
@@ -44,15 +46,16 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #2980b9;
 }
 
 article {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 6px;
     margin-bottom: 10px;
     position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .info {
@@ -66,15 +69,16 @@ article {
 }
 
 h2 a {
-    color: aqua;
+    color: #3498db;
 }
 
 form {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 form div {
@@ -96,12 +100,13 @@ form div label {
 input,
 textarea {
     min-height: 30px;
-    border: 1px solid #000;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #2c3e50;
     font-size: 18px;
     padding: 3px 5px;
     outline: none;
+    border-radius: 4px;
 }
 
 textarea {
@@ -118,10 +123,15 @@ textarea {
     text-transform: uppercase;
     padding: 10px 15px;
     cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .form-button input:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #2980b9;
 }
 
 .home,
@@ -133,8 +143,8 @@ textarea {
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    background: linear-gradient(to bottom, #00d2ff, #928dab);
-    color: #fff;
+    background: linear-gradient(to bottom, #f6f8fc, #dbe9f4);
+    color: #2c3e50;
     padding-top: 0;
 }
 
@@ -152,6 +162,7 @@ textarea {
     text-transform: uppercase;
     font-size: 160px;
     margin-bottom: 20px;
+    color: #e74c3c;
 }
 
 .btn-edit,
@@ -161,18 +172,19 @@ textarea {
     text-transform: uppercase;
     padding: 10px 15px;
     cursor: pointer;
-    border: 1px solid #000;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    border: none;
+    background-color: #ecf0f1;
+    color: #2c3e50;
     width: 48px;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
-.btn-edit,
+.btn-edit:hover,
 .btn-delete:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #bdc3c7;
 }
 
 .btn-edit {
